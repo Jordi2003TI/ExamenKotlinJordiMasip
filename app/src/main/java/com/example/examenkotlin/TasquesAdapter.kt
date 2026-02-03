@@ -20,7 +20,15 @@ class TasquesAdapter : RecyclerView.Adapter<TascaViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: TascaViewHolder, position: Int) {
-        holder.renderitza(tasques[position])
+        var item = tasques[position]
+        holder.bind(item)
+    }
+
+    override fun getItemCount(): Int{
+        return tasques.size
     }
 
 }
+
+private fun TascaViewHolder.bind(item: Tasca) {}
+
