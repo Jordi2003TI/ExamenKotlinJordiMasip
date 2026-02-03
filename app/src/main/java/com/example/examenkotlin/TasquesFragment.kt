@@ -12,7 +12,6 @@ import com.google.android.material.chip.Chip
 import com.google.android.material.chip.ChipGroup
 
 class TasquesFragment : Fragment() {
-
     private lateinit var recyclerView: RecyclerView
     private lateinit var chipGroup: ChipGroup
     private lateinit var toolbar: Toolbar
@@ -95,5 +94,6 @@ class TasquesFragment : Fragment() {
         }
         adapter.setTasques(tasquesFiltrades)
     }
+
 }
 

@@ -15,7 +15,7 @@ class TasquesAdapter : RecyclerView.Adapter<TascaViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TascaViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.fragment_tasques, parent, false)
+            .inflate(R.layout.item_tasca, parent, false)
         return TascaViewHolder(view)
     }
 
@@ -27,6 +27,7 @@ class TasquesAdapter : RecyclerView.Adapter<TascaViewHolder>() {
     override fun getItemCount(): Int{
         return tasques.size
     }
+
 
 }
 

@@ -6,4 +6,6 @@ import androidx.recyclerview.widget.RecyclerView
 class TascaViewHolder(
     itemView: View
 ): RecyclerView.ViewHolder(itemView) {
+
+
 }
