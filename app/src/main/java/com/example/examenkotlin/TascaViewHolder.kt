@@ -15,7 +15,6 @@ class TascaViewHolder(
     private var tvEstat: TextView = itemView.findViewById(R.id.tvEstat)
 
     fun bind(item: Tasca{
-
     }
 
 
