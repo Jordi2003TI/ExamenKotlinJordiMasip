@@ -1,6 +1,7 @@
 package com.example.examenkotlin
 
 object TasquesRepository {
+    val item: List<Tasca> = listOf(
     Tasca(1, "Preparar presentació", Categoria.Feina, "25/01/2026", Estat.EnCurs),
     Tasca(2, "Revisar emails", Categoria.Feina, "25/01/2026", Estat.NoComencada),
     Tasca(3, "Sopar familiar", Categoria.Familia, "26/01/2026", Estat.NoComencada),
@@ -9,4 +10,5 @@ object TasquesRepository {
     Tasca(6, "Llegir llibre", Categoria.Personal, "27/01/2026", Estat.EnCurs),
     Tasca(7, "Reunió equip", Categoria.Feina, "26/01/2026", Estat.NoComencada),
     Tasca(8, "Trucar mare", Categoria.Familia, "25/01/2026", Estat.Finalitzada)
+    )
 }
