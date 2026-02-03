@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    tools:context=".fragment_tascas">
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/appBar"
+        android:id="@+id/toolbar"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:background="?attr/colorPrimary"
@@ -14,8 +17,8 @@
         app:titleTextColor="@android:color/white" />
 
     <com.google.android.material.chip.ChipGroup
-        android:id="@+id/chipTodos"
-        app:layout_constraintTop_toBottomOf="@+id/appBar"
+        android:id="@+id/chipGroup"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         app:checkedChip="@id/chipTotes"
@@ -54,7 +57,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv"
-        app:layout_constraintTop_toBottomOf="@+id/chipTodos"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroup"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:clipToPadding="false"
@@ -62,12 +65,11 @@
     </androidx.recyclerview.widget.RecyclerView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/recyclerView"
+        android:id="@+id/bottonNavegationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/menu_navegation">
     </com.google.android.material.bottomnavigation.BottomNavigationView>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
